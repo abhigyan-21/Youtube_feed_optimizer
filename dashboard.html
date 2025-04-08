@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body class="dashboard-page">
+  <header>
+    <h1>WELCOME</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <div class="menu-box" id="menuBox">
+    <button onclick="window.location.href='preferences.html'">Preferences</button>
+    <button onclick="signOut()">Sign Out</button>
+  </div>
+
+  <main>
+    <div class="center-button">
+      <button class="optimize-button" id="powerBtn" onclick="togglePower()">
+        <i class="fas fa-power-off"></i>
+      </button>
+    </div>
+
+    <div class="slider-section">
+      <label>SPEED</label>
+      <input type="range" min="0" max="10" value="5"/>
+    </div>
+
+    <p class="status-text">Not started</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body.preferences-page {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #16222A, #3A6073);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+  }
+  
+  .preferences-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .preferences-form label {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .preferences-form select,
+  .preferences-form input[type="range"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .preferences-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .preferences-form button:hover {
+    background-color: #c0392b;
+  }
+  

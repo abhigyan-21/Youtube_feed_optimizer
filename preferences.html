@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preferences</title>
+  <link rel="stylesheet" href="preferences.css" />
+</head>
+<body class="preferences-page">
+  <div class="container">
+    <h1>User Preferences</h1>
+    
+    <form class="preferences-form">
+      <label for="category">Content Category:</label>
+      <select id="category" name="category">
+        <option value="tech">Technology</option>
+        <option value="music">Music</option>
+        <option value="education">Education</option>
+        <option value="sports">Sports</option>
+        <option value="comedy">Comedy</option>
+      </select>
+
+      <label for="frequency">Video Frequency:</label>
+      <input type="range" id="frequency" name="frequency" min="1" max="10" />
+
+      <label for="notifications">Notifications:</label>
+      <select id="notifications" name="notifications">
+        <option value="all">All</option>
+        <option value="important">Only Important</option>
+        <option value="none">None</option>
+      </select>
+
+      <button type="submit">Save Preferences</button>
+      <button type="button" onclick="goBack()">Back</button>
+    </form>
+  </div>
+
+  <script>
+    function goBack() {
+      window.location.href = 'dashboard.html';
+    }
+  </script>
+</body>
+</html>

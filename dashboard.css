@@ -1,0 +1,102 @@
+/* dashboard.css */
+body.dashboard-page {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .menu-toggle {
+    font-size: 24px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-box {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #2c3e50;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 99;
+  }
+  
+  .menu-box button {
+    display: block;
+    margin: 10px 0;
+    background: #e74c3c;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    width: 120px;
+  }
+  
+  .center-button {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .optimize-button {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #e74c3c;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.6);
+    font-size: 40px;
+    color: white;
+  }
+  
+  .optimize-button.active {
+    background-color: #2ecc71;
+    box-shadow: 0 0 30px rgba(46, 204, 113, 0.8), 0 0 60px rgba(46, 204, 113, 0.5);
+    transform: scale(1.05);
+  }
+  
+  .optimize-button:hover {
+    transform: scale(1.08);
+  }
+  
+  .slider-section {
+    margin: 30px 0;
+    text-align: center;
+  }
+  
+  .slider-section label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .slider-section input[type="range"] {
+    width: 80%;
+  }
+  
+  .status-text {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
